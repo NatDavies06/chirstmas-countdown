@@ -10,12 +10,22 @@ body {
     margin-top: 50px;
     font-size: 3rem;
     color: #4caf50;
+    text-shadow: 
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff, 
+    1px 1px 0 #ffffff; 
   }
   
   #countdown {
     font-size: 1.2rem;
     margin: 20px 0;
     color: #4caf50;
+    text-shadow: 
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff, 
+    1px 1px 0 #ffffff; 
   }
   
   .calendar-container {

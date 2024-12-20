@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const calendar = document.querySelector(".calendar");
     const countdown = document.getElementById("countdown");
     const today = new Date();
-    // day of the month (1 to 31)
+    // Day of the month (1 to 31)
     const currentDate = today.getDate();
   
     // Update the countdown
@@ -31,13 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (day <= currentDate) {
             // Mark the day as open and change its appearance
             dayElement.classList.add("open");
-            dayElement.textContent = `Day ${day} - Opened!`; // You can also put an image or a message here
+            dayElement.textContent = `Day ${day}  Opened!`; 
         } else {
             // Leave the day closed if it hasn't been reached yet
             dayElement.classList.add("closed");
             dayElement.textContent = `Day ${day}`;
         }
-      // Add event listener to open a door if clicked (only if it's not already open)
+      // Event listener to open a door if clicked (only if it's not already open)
       dayElement.addEventListener("click", function () {
         if (day <= currentDate && !dayElement.classList.contains("open")) {
           alert(`You opened Day ${day}!`);
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function resetSnowflake(snowflake) {
         const size = Math.random() * 5 + 1;
-        // snowflake size
+        // Snowflake size
         const viewportWidth = window.innerWidth - size;
         const viewportHeight = window.innerHeight;
 
