@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
   
-      // Append the day element to the calendar
       calendar.appendChild(dayElement);
   }
   
@@ -78,7 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         snowflake.style.width = `${size}px`;
         snowflake.style.height = `${size}px`;
-        snowflake.style.left = `${Math.random() * viewportWidth}px`; // Constrain within viewport width
+        snowflake.style.left = `${Math.random() * 
+         // Constrain within viewport width
+          viewportWidth}px`;
         snowflake.style.top = `-${size}px`;
 
         const animationDuration = (Math.random() * 3 + 2) / fallSpeed;
@@ -91,7 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
             if (parseInt(snowflake.style.top, 10) < viewportHeight) {
                 resetSnowflake(snowflake);
             } else {
-                snowflake.remove(); // Remove when it goes off the bottom edge
+              // Remove when it goes off the bottom edge
+                snowflake.remove(); 
             }
         }, animationDuration * 1000);
     }
