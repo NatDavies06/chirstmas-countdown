@@ -11,10 +11,10 @@ body {
     font-size: 3rem;
     color: #4caf50;
     text-shadow: 
-    -1px -1px 0 #ffffff,
-    1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff, 
-    1px 1px 0 #ffffff; 
+    -1px -1px 0 #ffffdb,
+    1px -1px 0 #ffffdb,
+    -1px 1px 0 #ffffdb, 
+    1px 1px 0 #ffffdb; 
   }
   
   #countdown {
@@ -22,10 +22,10 @@ body {
     margin: 20px 0;
     color: #4caf50;
     text-shadow: 
-    -0.5px -0.5px 0 #ffffff,
-    0.5px -0.5px 0 #ffffff,
-    -0.5px 0.5px 0 #ffffff, 
-    0.5px 0.5px 0 #ffffff; 
+    -0.5px -0.5px 0 #ffffdb,
+    0.5px -0.5px 0 #ffffdb,
+    -0.5px 0.5px 0 #ffffdb, 
+    0.5px 0.5px 0 #ffffdb; 
   }
   
   .calendar-container {
@@ -55,17 +55,17 @@ body {
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s;
-    border: 1px solid #ffffff;
+    border: 1px solid #ffffffdb;
   }
   
   .calendar div:hover {
     background-color: #d95c5c;
-    color: #fff;
+    color: #fffffff0;
   }
   
   .calendar div.open {
     background-color: #4caf50;
-    color: #fff;
+    color: #fffffff0;
   }
   
   .calendar div.closed {
@@ -77,12 +77,12 @@ body {
     top: 5px;
     right: 5px;
     font-size: 0.7rem;
-    color: #fff;
+    color: #fffffff0;
   }
   
   .calendar div.christmas-day {
     background-color: #fa0e0e;
-    color: #fff;
+    color: #fffffff0;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
