@@ -15,6 +15,7 @@ A fun and interactive advent calendar-style countdown leading up to Christmas! E
 ## Features
 
 - **Advent Calendar**: Displays 24 days of December, each one becoming interactive and unlockable as the days pass.
+-**The Big Day**: On the 25th a special message will appear.
 - **Countdown Timer**: Shows the number of days remaining until Christmas Day.
 - **Interactivity**: Click on any day to "open" it (up until the current day).
 - **Responsive Design**: Looks great on both desktop and mobile devices.

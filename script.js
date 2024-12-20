@@ -2,53 +2,66 @@ document.addEventListener("DOMContentLoaded", function () {
     const calendar = document.querySelector(".calendar");
     const countdown = document.getElementById("countdown");
     const today = new Date();
-    const currentDate = today.getDate();  // Day of the month (1-31)
+    // day of the month (1 to 31)
+    const currentDate = today.getDate();
   
     // Update the countdown
     const christmas = new Date(today.getFullYear(), 11, 25); // Christmas Day (Dec 25)
     const daysLeft = Math.ceil((christmas - today) / (1000 * 60 * 60 * 24));
-    countdown.textContent = `Only ${daysLeft} days left until Christmas!`;
-  
-    // Create the calendar days (1 to 24)
-    for (let day = 1; day <= 24; day++) {
+
+    if (currentDate === 25) {
+        countdown.textContent = "Merry Christmas!";
+    } else {
+      countdown.textContent = `Only ${daysLeft} days left until Christmas!`;
+    }
+
+    // Create the calendar days (1 to 25)
+    for (let day = 1; day <= 25; day++) {
       const dayElement = document.createElement("div");
       dayElement.classList.add("calendar-day");
   
-      // Add text for the day (e.g., Day 1, Day 2)
+      // Add text for the day (Day 1, Day 2)
       const daySpan = document.createElement("span");
       daySpan.textContent = `Day ${day}`;
       dayElement.appendChild(daySpan);
   
-      // Check if the current day is past this one
-      if (day <= currentDate) {
-        // Mark the day as open and change its appearance
-        dayElement.classList.add("open");
-        dayElement.textContent = `Day ${day} - Opened!`;  // You can also put an image or a message here
-      } else {
-        // Leave the day closed if it hasn't been reached yet
-        dayElement.classList.add("closed");
-        dayElement.textContent = `Day ${day}`;
-      }
   
+      if (day < 25) {
+        // Check if the current day is past this one
+        if (day <= currentDate) {
+            // Mark the day as open and change its appearance
+            dayElement.classList.add("open");
+            dayElement.textContent = `Day ${day} - Opened!`; // You can also put an image or a message here
+        } else {
+            // Leave the day closed if it hasn't been reached yet
+            dayElement.classList.add("closed");
+            dayElement.textContent = `Day ${day}`;
+        }
       // Add event listener to open a door if clicked (only if it's not already open)
       dayElement.addEventListener("click", function () {
         if (day <= currentDate && !dayElement.classList.contains("open")) {
           alert(`You opened Day ${day}!`);
           dayElement.classList.add("open");
-          dayElement.textContent = `Day ${day} - Opened!`; // Change text or show something special
+          dayElement.textContent = `Day ${day} - Opened!`;
         } else {
           alert("This day is not yet open!");
         }
       });
+    } else if (day === 25) {
+      // Special handling for Christmas Day
+      dayElement.textContent = "Merry Christmas!";
+      dayElement.classList.add("christmas-day");
+    }
+
   
       // Append the day element to the calendar
       calendar.appendChild(dayElement);
-    }
+  }
   
     // Snow effects
     const snowContainer = document.querySelector(".snow-container");
     const particlesPerThousandPixels = 0.1;
-    
+
     const fallSpeed = 1.25;
     const pauseWhenNotActive = true;
     const maxSnowflakes = 200;
@@ -59,7 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function resetSnowflake(snowflake) {
         const size = Math.random() * 5 + 1;
-        const viewportWidth = window.innerWidth - size; // Adjust for snowflake size
+        // snowflake size
+        const viewportWidth = window.innerWidth - size;
         const viewportHeight = window.innerHeight;
 
         snowflake.style.width = `${size}px`;

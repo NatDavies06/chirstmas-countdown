@@ -69,6 +69,13 @@ body {
     color: #fff;
   }
   
+  .calendar div.christmas-day {
+    background-color: #fa0e0e;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
   .snow-container {
     position: fixed;
     top: 0;
