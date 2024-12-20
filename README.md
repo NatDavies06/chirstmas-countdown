@@ -6,7 +6,6 @@ A fun and interactive advent calendar-style countdown leading up to Christmas! E
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Demo](#demo)
 - [Contributing](#contributing)
 - [License](#license)
