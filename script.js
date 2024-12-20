@@ -45,4 +45,5 @@ document.addEventListener("DOMContentLoaded", function () {
       calendar.appendChild(dayElement);
     }
   });
+
   
