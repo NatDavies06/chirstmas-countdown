@@ -6,7 +6,7 @@ A fun and interactive advent calendar-style countdown leading up to Christmas! E
 
 - [Features](#features)
 - [Installation](#installation)
-- [Demo](#demo)
+- [Calendar](#calendar)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -37,9 +37,9 @@ A fun and interactive advent calendar-style countdown leading up to Christmas! E
 No need to install aything - everything is client-side.
 
 
-## Demo
+## Calendar
 
-* Coming Soon!
+[Christmas Countdown!](https://natdavies06.github.io/chirstmas-countdown/)
 
 ## Contributing
 
