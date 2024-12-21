@@ -44,7 +44,7 @@ body {
   }
   
   .calendar div {
-    background-color: #e1e1e1;
+    background-color: #e1e1e1;;
     padding: 20px;
     font-size: 1.5rem;
     display: flex;
@@ -56,6 +56,8 @@ body {
     border-radius: 8px;
     transition: background-color 0.3s;
     border: 1px solid #ffffffdb;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .calendar div:hover {
